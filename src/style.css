@@ -156,14 +156,7 @@ footer {
 
   .weather-forecast {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 3 items per row */
+    grid-template-columns: repeat(2, 1fr);
     /* gap: 16px; */
-  }
-}
-
-@media (max-width: 480px) {
-  .weather-app {
-    max-width: 480px;
-    width: 80%;
   }
 }
