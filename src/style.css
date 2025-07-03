@@ -129,15 +129,24 @@ footer {
   color: rgba(0, 0, 0, 0.6);
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   .weather-app {
-    max-width: 320px;
+    max-width: 768px;
     width: 80%;
+  }
+}
+
+@media (max-width: 481px) {
+  .weather-app {
+    max-width: 481px;
+    width: 80%;
+    text-align: center;
   }
 
   .search-form {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .search-form-input {
@@ -157,6 +166,10 @@ footer {
   .weather-forecast {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* gap: 16px; */
+    gap: 16px;
+  }
+  .weather-app-temperature-container {
+    margin: 0 auto;
+    margin-top: 1rem;
   }
 }
